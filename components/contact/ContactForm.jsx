@@ -85,7 +85,7 @@ const CommonContact = ({ condition }) => {
         <div className="relative z-0 w-full mb-8 group">
           <input
             type="email"
-            name="user_email"
+            name="email"
             className="block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#5185D4] peer"
             placeholder=" "
             id="user_email"
