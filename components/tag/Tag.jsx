@@ -1,0 +1,35 @@
+const Tag = () => {
+  const tagData = [
+    {
+      title: "Languages",
+      tags: ["https://skillicons.dev/icons?i=js,ts,html,css&theme=dark"],
+    },
+    {
+      title: "Frameworks",
+      tags: ["https://skillicons.dev/icons?i=react,nodejs,next,vite&theme=dark"],
+    },
+    {
+      title: "Libraries",
+      tags: ["https://skillicons.dev/icons?i=tailwind,express,mongodb,bootstrap&theme=dark"],
+    },
+    {
+      title: "Tools",
+      tags: ["https://skillicons.dev/icons?i=vscode,github,git,postman,photoshop,figma,vercel,netlify&theme=dark"],
+    },
+  ];
+
+  return (
+    <>
+      {tagData.map((section, i) => (
+        <div key={i}>
+          <h3>{section.title}</h3>
+          {section.tags.map((tag, j) => (
+            <img src={tag} alt={`Tag ${j}`} key={j} className="tag-icon" />
+          ))}
+        </div>
+      ))}
+    </>
+  );
+};
+
+export default Tag;
