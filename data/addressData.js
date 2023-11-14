@@ -1,7 +1,7 @@
 module.exports = [
   {
     id: "01",
-    icon: "/images/contact/phone-call 1.png",
+    icon: "/images/contact/phone1.png",
     title: "Phone ",
     info: (
       <>
@@ -20,7 +20,7 @@ module.exports = [
   },
   {
     id: "02",
-    icon: "/images/contact/email 1.png",
+    icon: "/images/contact/email1.png",
     title: "Email ",
     info: (
       <>
@@ -39,7 +39,7 @@ module.exports = [
   },
   {
     id: "03",
-    icon: "/images/contact/map 1.png",
+    icon: "/images/contact/map1.png",
     title: "Location ",
     info: (
       <>
