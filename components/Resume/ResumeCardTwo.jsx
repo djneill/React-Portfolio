@@ -8,7 +8,7 @@ const ResumeCardTwo = () => {
     <>
       {resumeData.slice(0, 2).map((item) => (
         <div key={item.id}>
-          <div className="flex items-center space-x-2 mb-4">
+          <div className="flex items-center space-x-2 my-4">
             <div className="text-6xl text-[#F95054]">{item.icon}</div>
             <h4 className="text-5xl dark:text-white font-medium">
               {item.title}
@@ -20,9 +20,8 @@ const ResumeCardTwo = () => {
             <div
               className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg  dark:border-[#212425] dark:border-2"
               style={{
-                background: `${
-                  theme === "dark" ? "transparent" : singleItem?.bg
-                }`,
+                background: `${theme === "dark" ? "transparent" : singleItem?.bg
+                  }`,
               }}
               key={singleItem.id}
             >
