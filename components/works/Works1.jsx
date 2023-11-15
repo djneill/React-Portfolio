@@ -140,11 +140,11 @@ const Works1 = () => {
         className=" outline-none flex items-center  p-4 md:p-8  rounded-2xl my-8"
       >
         <div className=" w-full md:w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg ">
-          <div className=" overflow-y-scroll max-h-[80vh] no-scrollbar ">
+          <div className=" overflow-y-scroll max-h-[60vh] no-scrollbar ">
             {/* close button */}
             <BsXCircle
               onClick={() => setIsOpen(false)}
-              className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
+              className="text-7xl cursor-pointer  absolute right-2 -top-10 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
             />
             <h2 className="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
               {singleData.tag}
