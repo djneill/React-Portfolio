@@ -16,17 +16,30 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta
-          name="Portfolio for Full Stack Software Engineer & Web Developer"
-          content="Portfolio for Full Stack Software Engineer & Web Developer"
+          name="description"
+          content="Experienced fullstack software engineer and web developer. Explore my portfolio and contact me for your website development needs."
         />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
-          name="Full Stack Software Engineer & Web Developer"
-          content="Full Stack Software Engineer & Web Developer"
+          name="keywords"
+          content="fullstack software engineer, web developer, portfolio, website development"
         />
-        <meta name="ibthemes" content="ATFN" />
+        <meta property="og:title" content="Fullstack Software Engineer & Web Developer | DJ Neill" />
+        <meta property="og:description" content="Experienced fullstack software engineer and web developer. Explore my portfolio and contact me for your website development needs." />
+        <meta property="og:image" content="https://djneill.com/_next/image?url=%2Fimages%2Fbackground%2meta.webp&w=384&q=75" />
+        <meta property="og:url" content="https://djneill.com/" />
+
+        <meta name="twitter:card" content="/images/background/meta.webp" />
+        <meta name="twitter:title" content="Fullstack Software Engineer & Web Developer | DJ Neill" />
+        <meta name="twitter:description" content="Experienced fullstack software engineer and web developer. Explore my portfolio and contact me for your website development needs." />
+        <meta name="twitter:image" content="https://djneill.com/_next/image?url=%2Fimages%2Fbackground%2meta.webp&w=384&q=75" />
+
+
+        <meta name="DJ Neill" content="Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://djneill.com/" />
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
       <ToastContainer
         position="top-right"
