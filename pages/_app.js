@@ -26,13 +26,13 @@ export default function App({ Component, pageProps }) {
         />
         <meta property="og:title" content="Fullstack Software Engineer & Web Developer | DJ Neill" />
         <meta property="og:description" content="Experienced fullstack software engineer and web developer. Explore my portfolio and contact me for your website development needs." />
-        <meta property="og:image" content="/images/background/meta.webp" />
+        <meta property="og:image" content="https://djneill.com/public/images/background/meta.webp" />
         <meta property="og:url" content="https://djneill.com/" />
 
         <meta name="twitter:card" content="/images/background/meta.webp" />
         <meta name="twitter:title" content="Fullstack Software Engineer & Web Developer | DJ Neill" />
         <meta name="twitter:description" content="Experienced fullstack software engineer and web developer. Explore my portfolio and contact me for your website development needs." />
-        <meta name="twitter:image" content="/images/background/meta.webp" />
+        <meta name="twitter:image" content="https://djneill.com/public/images/background/meta.webp" />
 
 
         <meta name="DJ Neill" content="Portfolio" />
