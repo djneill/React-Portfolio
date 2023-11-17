@@ -6,12 +6,11 @@ module.exports = [
     info: (
       <>
         <p>
-          <a
-            href="tel:12549311523"
+          <p
             className="text-gray-lite text-lg dark:text-[#A6A6A6] "
           >
-            254-931-1523
-          </a>
+            Request a call
+          </p>
         </p>
 
       </>
@@ -25,12 +24,11 @@ module.exports = [
     info: (
       <>
         <p>
-          <a
-            href="mailto:dj.r.neill@gmail.com"
+          <p
             className="text-gray-lite text-lg dark:text-[#A6A6A6] "
           >
-            dj.r.neill@gmail.com
-          </a>
+            I will reply ASAP
+          </p>
         </p>
 
       </>
@@ -44,7 +42,7 @@ module.exports = [
     info: (
       <>
         <p className="text-gray-lite text-lg dark:text-[#A6A6A6] ">
-          Texas
+          USA
         </p>
 
       </>

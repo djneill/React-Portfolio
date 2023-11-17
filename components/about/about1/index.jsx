@@ -34,7 +34,7 @@ const index = () => {
         {/* personal information */}
         <div>
           <h3 className="text-4xl font-medium my-5 dark:text-white">
-            Personal Info
+            Get In Touch
           </h3>
           <div className=" grid grid-cols-1 sm:grid-cols-2 gap-6">
             <PersonalInfo />
