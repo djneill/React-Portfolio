@@ -10,7 +10,11 @@ const Tag = () => {
     },
     {
       title: "Libraries",
-      tags: ["https://skillicons.dev/icons?i=tailwind,express,mongodb,bootstrap&theme=dark"],
+      tags: ["https://skillicons.dev/icons?i=tailwind,express,bootstrap&theme=dark"],
+    },
+    {
+      title: "Databases",
+      tags: ["https://skillicons.dev/icons?i=mongodb,sqlite,postgresql&theme=dark"],
     },
     {
       title: "Tools",
@@ -21,7 +25,7 @@ const Tag = () => {
   return (
     <>
       {tagData.map((section, i) => (
-        <div key={i}>
+        <div className="m-4" key={i}>
           <h3>{section.title}</h3>
           {section.tags.map((tag, j) => (
             <img src={tag} alt={`Tag ${j}`} key={j} className="tag-icon" />
