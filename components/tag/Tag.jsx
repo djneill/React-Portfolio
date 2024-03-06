@@ -6,7 +6,7 @@ const Tag = () => {
     },
     {
       title: "Frameworks",
-      tags: ["https://skillicons.dev/icons?i=react,nodejs,next,vite&theme=dark"],
+      tags: ["https://skillicons.dev/icons?i=react,nodejs,next,vite,astro&theme=dark"],
     },
     {
       title: "Libraries",
