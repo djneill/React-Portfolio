@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container">
         {/* Header menu start  */}
         <header className="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]  ">
-          <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black ">
+          <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black">
             <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
               <Link className="text-5xl font-semibold" href="/">
                 {/* website logo  */}
@@ -73,12 +73,12 @@ const Header = () => {
                   <Link
                     className={`${isActiveLink(item.routePath, router.asPath)
                       ? "rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] linked bg-gradient-to-r "
-                      : "px-2 rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6]"
+                      : "px-4 rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6]"
                       } `}
                     href={item.routePath}
                   >
                     <span className="mr-2 text-xl">{item.icon}</span>
-                    {item.name}
+                    <span className="whitespace-nowrap">{item.name}</span>
                   </Link>
                 </li>
               ))}

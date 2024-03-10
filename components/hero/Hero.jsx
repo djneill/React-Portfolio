@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Social from "../social/Social";
+import Link from "next/link"
+import { FiCodesandbox } from "react-icons/fi";
 
 const Hero = () => {
   return (
@@ -19,7 +21,6 @@ const Hero = () => {
         DJ Neill
       </h3>
       <p className="mb-4 text-[#7B7B7B]">Full-Stack Software Engineer</p>
-      <p className="mb-4 text-[#7B7B7B]">Web Design / Developer</p>
       {/* Avatar Info End */}
 
       {/* Social information start */}
@@ -29,16 +30,29 @@ const Hero = () => {
       {/* Social information start */}
 
       {/* Dowanload button start */}
-      <a
+      {/* <a
         href="/images/cv.pdf"
         download
         className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
       >
         <img src="/images/download.png" alt="icon" className="mr-2" />
         Download CV
-      </a>
-
+      </a> */}
       {/* Dowanload button End */}
+      <div className="flex px-4">
+        <Link
+          href="/works"
+          className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-4 py-3 text-lg text-white rounded-[35px] mt-6 mx-2"
+        >
+          View My Work
+        </Link>
+        <Link
+          href="/contact"
+          className="flex items-center bg-transparent border-white border-2 duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6 mx-2"
+        >
+          Contact Me
+        </Link>
+      </div>
     </div>
   );
 };
