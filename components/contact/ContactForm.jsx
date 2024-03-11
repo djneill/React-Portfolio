@@ -54,11 +54,11 @@ const CommonContact = ({ condition }) => {
     >
       <h3 className="text-4xl  ">
         <span className="text-gray-lite dark:text-[#A6A6A6] ">
-          I&apos;m always open to discussing product
+          I&apos;m always open to discussing new
         </span>
         <br />
         <span className="font-semibold dark:text-white">
-          design work or partnerships.
+          project ideas or partnerships.
         </span>
       </h3>
 

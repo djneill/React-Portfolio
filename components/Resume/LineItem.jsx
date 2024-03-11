@@ -6,44 +6,32 @@ const LineItem = ({ item }) => {
     {
       id: 1,
       color: "#FF6464",
-      name: "Web Design",
-      number: "80",
+      name: "JavaScript | TypeScript",
+      // number: "90",
     },
     {
       id: 2,
-      color: "#9272D4",
-      name: "Full-Stack Web Applications",
-      number: "95",
+      color: "#FFA726",
+      name: "React | Next.JS | Node.JS | Vite | Astro",
+      // number: "95",
     },
     {
       id: 3,
       color: "#5185D4",
-      name: "Responsive Web Design",
-      number: "85",
+      name: "Tailwind CSS | Bootstrap | Shadcn/ui | DaisyUI | Express.JS",
+      // number: "85",
     },
     {
       id: 4,
       color: "#CA56F2",
-      name: "UI/UX Design",
-      number: "75",
+      name: "MongoDB | PostgreSQL | SQLite",
+      // number: "75",
     },
     {
       id: 5,
-      color: "#FF6464",
-      name: "API Development",
-      number: "90",
-    },
-    {
-      id: 6,
-      color: "#9272D4",
-      name: "Database Management",
-      number: "85",
-    },
-    {
-      id: 7,
-      color: "#5185D4",
-      name: "Version Control (Git)",
-      number: "90",
+      color: "#65A30D",
+      name: "Vercel | Netlify | Figma | Photoshop | Postman | Git | GitHub | VsCode",
+      // number: "90",
     },
   ];
 
@@ -57,12 +45,12 @@ const LineItem = ({ item }) => {
               {item?.name}
             </span>
             <span className=" text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">
-              {item?.number}%
+              {item?.number}
             </span>
           </div>
 
           <Line
-            percent={item?.number}
+            percent={100}
             strokeWidth={1}
             trailWidth={1}
             // trailColor={`${local === "dark" ? "#1C1C1C" : "#EDF2F2"}`}

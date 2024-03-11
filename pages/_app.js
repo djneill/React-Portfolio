@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:image" content="https://djneill.com/images/background/meta.webp" />
         <meta property="og:url" content="https://djneill.com/" />
 
-        <meta name="twitter:card" content="/images/background/meta.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fullstack Software Engineer & Web Developer | DJ Neill" />
         <meta name="twitter:description" content="Experienced fullstack software engineer and web developer. Explore my portfolio and contact me for your website development needs." />
         <meta name="twitter:image" content="https://djneill.com/images/background/meta.webp" />
@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
         pauseOnHover
       />
 
-      <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" defaultTheme="dark">
         <Component {...pageProps} />
       </ThemeProvider>
     </>
