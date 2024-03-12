@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Social from "../social/Social";
 import Link from "next/link"
+import { useTheme } from 'next-themes'
 import { FiCodesandbox } from "react-icons/fi";
 
 const Hero = () => {
+  const { theme } = useTheme()
+
+  const buttonClass = `flex items-center justify-center bg-transparent duration-200 transition ease-linear hover:bg-gradient-to-l ${theme === 'light' ? 'from-[#DD2476] to-[#fa5252ef] border-black text-black' : 'from-[#DD2476] to-[#fa5252ef] border-white text-white'} border-2 px-8 py-3 text-lg rounded-[35px] mt-6 mx-2`;
   return (
     <div
       className="flex flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh]  xl:h-[71vh]  justify-center"
@@ -39,16 +43,16 @@ const Hero = () => {
         Download CV
       </a> */}
       {/* Dowanload button End */}
-      <div className="flex px-4">
+      <div className="flex flex-col md:flex-row px-4">
         <Link
           href="/works"
-          className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-4 py-3 text-lg text-white rounded-[35px] mt-6 mx-2"
+          className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-4 py-3 text-lg text-white rounded-[35px] mt-6 mx-2"
         >
           View My Work
         </Link>
         <Link
           href="/contact"
-          className="flex items-center bg-transparent border-white border-2 duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6 mx-2"
+          className={buttonClass}
         >
           Contact Me
         </Link>

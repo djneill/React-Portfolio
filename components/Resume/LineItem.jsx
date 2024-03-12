@@ -6,7 +6,7 @@ const LineItem = ({ item }) => {
     {
       id: 1,
       color: "#FF6464",
-      name: "JavaScript | TypeScript",
+      name: "JavaScript | TypeScript | HTML | CSS",
       // number: "90",
     },
     {
