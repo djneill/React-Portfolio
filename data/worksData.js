@@ -21,7 +21,7 @@ module.exports = [
     imgSmall: "/images/work_images/nadc.webp",
     bg: "#FFF0F0",
     client: "NADC Burger",
-    languages: "TypeScript, React, Next.js, Shadcn/ui,Tailwind",
+    languages: "TS, React, Next, Tailwind",
     link: "https://burger-town.netlify.app/",
     linkText: "burger-town.netlify.app/",
     description: "NADC Burger is a restaurant website. It includes information about the restaurant, services offered, contact details, and a contact form for potential customers to get in touch.",
@@ -174,7 +174,7 @@ module.exports = [
     imgSmall: "/images/work_images/small/nasaSm.webp",
     bg: "#FCF4FF",
     client: "Temple Astronomy Society",
-    languages: "JavaScript, Microsoft Azure",
+    languages: "JavaScript, HTML, CSS, NASA API",
     link: "https://templeastronomysociety.netlify.app/",
     linkText: "templeastronomysociety.netlify.app",
     description:

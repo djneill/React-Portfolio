@@ -159,7 +159,7 @@ const Works2 = () => {
                 <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
                   <FiCode className="text-lg mr-2 hidden sm:block " />
                   Langages :&nbsp;
-                  <span className="font-medium ">{singleData?.langages}</span>
+                  <span className="font-medium ">{singleData?.languages}</span>
                 </p>
               </div>
 
