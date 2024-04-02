@@ -16,6 +16,19 @@ module.exports = [
   {
     id: "2",
     tag: "Website",
+    title: "NADC Burger",
+    img: "/images/work_images/small/nadc.webp",
+    imgSmall: "/images/work_images/small/nadc.webp",
+    bg: "#FFF0F0",
+    client: "NADC Burger",
+    languages: "TypeScript, React, Next.js, Shadcn/ui,Tailwind",
+    link: "https://burger-town.netlify.app/",
+    linkText: "burger-town.netlify.app/",
+    description: "NADC Burger is a restaurant website. It includes information about the restaurant, services offered, contact details, and a contact form for potential customers to get in touch.",
+  },
+  {
+    id: "3",
+    tag: "Website",
     title: "Mario's Landscaping",
     img: "/images/work_images/ml.webp",
     imgSmall: "/images/work_images/small/mlSm.webp",
@@ -28,7 +41,7 @@ module.exports = [
       "Mario Landscaping is a website designed to showcase the landscaping services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   },
   {
-    id: "3",
+    id: "4",
     tag: "Website",
     title: "808 Island Grinds",
     img: "/images/work_images/808ig.webp",
@@ -42,7 +55,7 @@ module.exports = [
       "808 Island Grinds is a website designed to showcase the food and services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   },
   // {
-  //   id: "4",
+  //   id: "5",
   //   tag: "Website",
   //   title: "Parada Restoration",
   //   img: "/images/work_images/pr.webp",
@@ -56,7 +69,7 @@ module.exports = [
   //     "Parada Restoration is a website designed to showcase the restoration services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   // },
   // {
-  //   id: "5",
+  //   id: "6",
   //   tag: "Website",
   //   title: "John's Gym Temple",
   //   img: "/images/work_images/tm.webp",
@@ -70,7 +83,7 @@ module.exports = [
   //     "John's Gym Temple is a website designed to showcase the martial arts services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   // },
   // {
-  //   id: "6",
+  //   id: "7",
   //   tag: "Website",
   //   title: "Beauty By Bea",
   //   img: "/images/work_images/bea.webp",
@@ -84,7 +97,7 @@ module.exports = [
   //     "Beauty By Bea is a website designed to showcase the beauty services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   // },
   {
-    id: "7",
+    id: "8",
     tag: "Web App",
     title: "Let's Cook",
     img: "/images/work_images/mvp.webp",
@@ -98,7 +111,7 @@ module.exports = [
       "Let's Cook is a full-stack web app. I wanted to create a place where users could post their favorite recipes, search for new recipes, and save their favorite recipes to a collection that they could easily find. Users can like, save, and comment on recipes, as well as delete recipes from their favorites that they may not want to keep saved.",
   },
   // {
-  //   id: "8",
+  //   id: "9",
   //   tag: "Web App",
   //   title: "Film Flix",
   //   img: "/images/work_images/ff.webp",
@@ -112,7 +125,7 @@ module.exports = [
   //     "I wanted to explore and learn more by using React, Typescript, and Next.js to build a fun movie trailer app that replicated Netflix.I am using NextAuth for authentication, and bcrypt so passwords are hashed, and nothing is exposed. This site is for demonstration purposes, please do not use your real Netflix Password.",
   // },
   // {
-  //   id: "9",
+  //   id: "10",
   //   tag: "Web App",
   //   title: "Cortana Chatbot",
   //   img: "/images/work_images/cb.webp",
@@ -126,7 +139,7 @@ module.exports = [
   //     "Cortana is a chatbot that I created using React and OpenAI. I wanted to create a chatbot that could answer questions about me, and my projects. I used OpenAI's API to train the chatbot, and it is still a work in progress.",
   // },
   {
-    id: "10",
+    id: "11",
     tag: "Web App",
     title: "Pomodoro Task Timer",
     img: "/images/work_images/pom.webp",
@@ -140,7 +153,7 @@ module.exports = [
       "Giterdone Pomodoro is a full-stack web app. I wanted to create a place where users could create a task, set a timer for that task, and save the task to a collection that they could easily find. Users can add, complete, as well as delete tasks that they may not want to keep saved.",
   },
   {
-    id: "11",
+    id: "12",
     tag: "Web App",
     title: "Brand Detector",
     img: "/images/work_images/brand.webp",
@@ -154,7 +167,7 @@ module.exports = [
       "Brand Detector is a web app that I created using Microsoft Azure's Computer Vision API. I wanted to create a place where users could upload an image, and the app would detect the brand of the item in the image. Users can upload an image, and the app will detect the brand of the item in the image.",
   },
   {
-    id: "12",
+    id: "13",
     tag: "Web App",
     title: "Temple Astronomy Society",
     img: "/images/work_images/nasa.webp",
