@@ -2,7 +2,7 @@ const Tag = () => {
   const tagData = [
     {
       title: "Languages",
-      tags: ["https://skillicons.dev/icons?i=js,ts,html,css&theme=dark"],
+      tags: ["https://skillicons.dev/icons?i=js,ts,python,html,css&theme=dark"],
     },
     {
       title: "Frameworks",
