@@ -105,12 +105,12 @@ module.exports = [
     bg: "#F4F4FF",
     client: "Let's Cook",
     languages: "JavaScript, Node, MongoDB",
-    link: "https://letscook.cyclic.app/",
-    linkText: "letscook.cyclic.app",
+    link: "https://lets-cook-mvp.onrender.com/",
+    linkText: "lets-cook-mvp.onrender.com",
     description:
       "Let's Cook is a full-stack web app. I wanted to create a place where users could post their favorite recipes, search for new recipes, and save their favorite recipes to a collection that they could easily find. Users can like, save, and comment on recipes, as well as delete recipes from their favorites that they may not want to keep saved.",
   },
-  // {
+  // { 
   //   id: "9",
   //   tag: "Web App",
   //   title: "Film Flix",
@@ -147,8 +147,8 @@ module.exports = [
     bg: "#FCF4FF",
     client: "Pomodoro Task Timer",
     languages: "JavaScript, Node, MongoDB",
-    link: "https://giterdonepomodoro.cyclic.app/",
-    linkText: "giterdonepomodoro.cyclic.app",
+    link: "https://giterdonepomodoro.onrender.com/",
+    linkText: "giterdonepomodoro.onrender.com",
     description:
       "Giterdone Pomodoro is a full-stack web app. I wanted to create a place where users could create a task, set a timer for that task, and save the task to a collection that they could easily find. Users can add, complete, as well as delete tasks that they may not want to keep saved.",
   },
