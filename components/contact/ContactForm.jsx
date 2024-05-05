@@ -47,8 +47,18 @@ const CommonContact = ({ condition }) => {
       </h3>
 
       {/* Form Start */}
-      <form className="mt-4" name="contact" data-netlify="true" onSubmit={handleSubmit}>
-        <input type="hidden" name="form-name" value="contact" />
+      <form className="mt-4"
+        name="contact-form"
+        action="/form.html?success=true#yhteydenotto"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field">
+        <p hidden>
+          <label>
+            Don&apos;t fill this out: <input name="bot-field" />
+          </label>
+        </p>
+        <input type="hidden" name="form-name" value="contact-form" />
         <div className="relative z-0 w-full mt-[40px] mb-8 group">
           <input
             type="text"
