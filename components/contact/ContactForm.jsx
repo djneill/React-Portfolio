@@ -47,7 +47,7 @@ const CommonContact = ({ condition }) => {
       </h3>
 
       {/* Form Start */}
-      <form className="mt-4" name="contact" method="POST" onSubmit={handleSubmit}>
+      <form className="mt-4" name="contact" data-netlify="true" onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <div className="relative z-0 w-full mt-[40px] mb-8 group">
           <input
