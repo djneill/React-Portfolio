@@ -8,42 +8,26 @@ const CommonContact = ({ condition }) => {
 
   // use Email js for recive message
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...data }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          toast.success("Message Sent successfully!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          document.getElementById("myForm").reset();
-        },
-        (error) => {
-          toast.error("Ops Message not Sent!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-        }
-      );
   };
+
+  const handleChange = (e) =>
+    this.setState({ [e.target.name]: e.target.value });
 
   return (
     <div
@@ -63,7 +47,7 @@ const CommonContact = ({ condition }) => {
       </h3>
 
       {/* Form Start */}
-      <form className="mt-4" name="contact" method="POST" data-netlify="true">
+      <form className="mt-4" name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <div className="relative z-0 w-full mt-[40px] mb-8 group">
           <input
