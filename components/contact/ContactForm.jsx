@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 const CommonContact = ({ condition }) => {
   const form = useRef();
 
-  // use Email js for recive message
+  // use Email js for receive message
 
   const handleSubmit = (e) => {
     const data = {
@@ -15,7 +15,7 @@ const CommonContact = ({ condition }) => {
       message: e.target.message.value,
     };
 
-    fetch('/', {
+    fetch('/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...data }),
