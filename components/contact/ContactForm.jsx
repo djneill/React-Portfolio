@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -6,24 +9,33 @@ import "react-toastify/dist/ReactToastify.css";
 const CommonContact = ({ condition }) => {
   const form = useRef();
 
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState(null);
+
   // use Email js for receive message
 
-  const handleSubmit = (e) => {
-    const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    };
-
-    fetch('/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...data }),
-    })
-      .then(() => alert('Success!'))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      setStatus('pending');
+      setError(null);
+      const myForm = event.target;
+      const formData = new FormData(myForm);
+      const res = await fetch('/__forms.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      });
+      if (res.status === 200) {
+        setStatus('ok');
+      } else {
+        setStatus('error');
+        setError(`${res.status} ${res.statusText}`);
+      }
+    } catch (e) {
+      setStatus('error');
+      setError(`${e}`);
+    }
   };
 
   const handleChange = (e) =>
@@ -48,16 +60,15 @@ const CommonContact = ({ condition }) => {
 
       {/* Form Start */}
       <form className="mt-4"
-        name="contact-form"
-        method="POST"
-        data-netlify="true"
+        name="contact"
+        onSubmit={handleFormSubmit}
         netlify-honeypot="bot-field">
         <p hidden>
           <label>
             Don&apos;t fill this out: <input name="bot-field" />
           </label>
         </p>
-        <input type="hidden" name="form-name" value="contact-form" />
+        <input type="hidden" name="form-name" value="contact" />
         <div className="relative z-0 w-full mt-[40px] mb-8 group">
           <input
             type="text"
