@@ -49,7 +49,6 @@ const CommonContact = ({ condition }) => {
       {/* Form Start */}
       <form className="mt-4"
         name="contact-form"
-        action="/form.html?success=true"
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field">
