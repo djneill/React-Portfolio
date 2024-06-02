@@ -14,7 +14,7 @@ const Hero = () => {
       data-aos="fade"
     >
       <Image
-        className="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px]"
+        className={`rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px] border-2 ${theme === 'light' ? 'border-purple-600' : 'border-[#fa5252ef]'} `}
         src="/images/about/headShot.webp"
         width={250}
         height={250}
