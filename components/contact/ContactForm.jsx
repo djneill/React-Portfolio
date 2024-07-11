@@ -1,14 +1,13 @@
 'use client'
 
-import { useState } from 'react'
-import React, { useRef } from "react";
+import { useState, useRef } from 'react'
+import React from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const CommonContact = ({ condition }) => {
   const form = useRef();
-
   const [status, setStatus] = useState(null);
   const [error, setError] = useState(null);
 
@@ -31,15 +30,14 @@ const CommonContact = ({ condition }) => {
       } else {
         setStatus('error');
         setError(`${res.status} ${res.statusText}`);
+        toast.error(`Submission failed: ${res.status} ${res.statusText}`)
       }
     } catch (e) {
       setStatus('error');
       setError(`${e}`);
+      toast.error(`submission failed: ${e}`)
     }
   };
-
-  const handleChange = (e) =>
-    this.setState({ [e.target.name]: e.target.value });
 
   return (
     <div
@@ -48,6 +46,7 @@ const CommonContact = ({ condition }) => {
         : "  dark:border-[#212425] dark:border-2 mb-16  md:p-[48px]  p-4  "
         } bg-color-810 rounded-xl dark:bg-[#111111] mb-[30px] md:mb-[60px]`}
     >
+      <ToastContainer />
       <h3 className="text-4xl  ">
         <span className="text-gray-lite dark:text-[#A6A6A6] ">
           I&apos;m always open to discussing new
@@ -129,18 +128,7 @@ const CommonContact = ({ condition }) => {
             className=" transition ease-in duration-200 font-semibold cursor-pointer border-color-910   hover:border-transparent px-6  py-2 rounded-lg border-[2px]  hover:text-white   dark:text-white "
             value="Submit"
           />
-          {status === 'ok' && (
-            <div className="alert alert-success">
-              <SuccessIcon />
-              Submitted!
-            </div>
-          )}
-          {status === 'error' && (
-            <div className="alert alert-error">
-              <ErrorIcon />
-              {error}
-            </div>
-          )}
+
 
         </div>
 
@@ -149,40 +137,5 @@ const CommonContact = ({ condition }) => {
     </div>
   );
 };
-
-function SuccessIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="stroke-current shrink-0 h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-      />
-    </svg>
-  );
-}
-function ErrorIcon(success) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="stroke-current shrink-0 h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-      />
-    </svg>
-  );
-}
 
 export default CommonContact;
