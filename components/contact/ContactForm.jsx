@@ -27,6 +27,7 @@ const CommonContact = ({ condition }) => {
       });
       if (res.status === 200) {
         setStatus('ok');
+        toast.success('Email Submitted Successfully!')
       } else {
         setStatus('error');
         setError(`${res.status} ${res.statusText}`);
