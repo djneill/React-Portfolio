@@ -46,7 +46,7 @@ const Works1 = () => {
 
   const [data, setData] = useState(portfolioData);
 
-  // fillter portfilo data
+  // filter portfolio data
   const handleData = (text) => {
     if (text === "All") {
       setData(portfolioData);
@@ -58,38 +58,38 @@ const Works1 = () => {
 
   return (
     <>
-      {/* Portfilo fillter tab start */}
+      {/* Portfolio filter tab start */}
       <ul className="mt-[40px] flex w-full justify-start md:justify-end flex-wrap font-medium pb-12">
         <li
-          className={`${test === "All" ? "text-[#FA5252]" : "fillter-btn "
+          className={`${test === "All" ? "text-[#FA5252]" : "filter-btn "
             } mr-4 md:mx-4`}
           onClick={() => handleSearch("All")}
         >
           All
         </li>
         <li
-          className={`${test === "Website" ? "text-[#FA5252]" : "fillter-btn"
+          className={`${test === "Website" ? "text-[#FA5252]" : "filter-btn"
             } mr-4 md:mx-4`}
           onClick={() => handleSearch("Website")}
         >
           Websites
         </li>
         <li
-          className={`${test === "Web App" ? "text-[#FA5252]" : "fillter-btn"
+          className={`${test === "Web App" ? "text-[#FA5252]" : "filter-btn"
             } mr-4 md:mx-4`}
           onClick={() => handleSearch("Web App")}
         >
           Web Apps
         </li>
         {/* <li
-          className={`${test === "Logo" ? "text-[#FA5252]" : "fillter-btn ml-0"
+          className={`${test === "Logo" ? "text-[#FA5252]" : "filter-btn ml-0"
             } mr-4 md:mx-4`}
           onClick={() => handleSearch("Logo")}
         >
           Logo
         </li>
         <li
-          className={`${test === "UI/UX" ? "text-[#FA5252]" : "fillter-btn"}  `}
+          className={`${test === "UI/UX" ? "text-[#FA5252]" : "filter-btn"}  `}
           onClick={() => handleSearch("UI/UX")}
         >
           Graphic Design
@@ -114,7 +114,7 @@ const Works1 = () => {
           >
             <div className="overflow-hidden rounded-lg">
               <Image
-                className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto "
+                className="w-full transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto "
                 src={item.imgSmall}
                 width={300}
                 height={300}
@@ -122,27 +122,41 @@ const Works1 = () => {
                 alt="portfolio Image"
               />
             </div>
-            <span className="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">
+            <span className="pt-5 text-[14px] font-normal text-gray-lite text-center block dark:text-[#A6A6A6]">
               {item.tag}
             </span>
-            <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+            <h2 className="font-medium text-xl text-center duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
               {item.title}
             </h2>
+            <div className="flex">
+              <a href={item.repoLink}
+                alt="GitHub Repo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#50C878]  hover:to-[#228B22] p-2 text-xtiny text-white rounded-[35px] m-2"
+              >GitHub Repo</a>
+              <a href={item.link}
+                alt="GitHub Repo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#176bd9]  hover:to-[#0000FF] p-2 text-xtiny text-white rounded-[35px] m-2"
+              >View Demo</a>
+            </div>
           </div>
         ))}
       </Masonry>
       {/* End portfolio items */}
 
       {/* Start Modal for portfolio items */}
-      <Modal
+      {/* <Modal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
         className=" outline-none flex items-center  p-4 md:p-8  rounded-2xl my-8"
       >
         <div className=" w-full md:w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg ">
-          <div className=" overflow-y-scroll max-h-[60vh] no-scrollbar ">
-            {/* close button */}
-            <BsXCircle
+          <div className=" overflow-y-scroll max-h-[60vh] no-scrollbar "> */}
+      {/* close button */}
+      {/* <BsXCircle
               onClick={() => setIsOpen(false)}
               className="text-7xl cursor-pointer  absolute right-2 -top-10 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
             />
@@ -158,7 +172,7 @@ const Works1 = () => {
                 </p>
                 <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
                   <FiCode className="text-lg mr-2 hidden sm:block" />
-                  Langages :&nbsp;
+                  Languages :&nbsp;
                   <span className="font-medium">{singleData?.languages}</span>
                 </p>
               </div>
@@ -199,7 +213,7 @@ const Works1 = () => {
             />
           </div>
         </div>
-      </Modal>
+      </Modal> */}
       {/* End Modal for portfolio items */}
     </>
   );
