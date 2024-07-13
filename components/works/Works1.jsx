@@ -27,7 +27,7 @@ const Works1 = () => {
     setIsOpen(true);
   };
 
-  const handleModle = (id) => {
+  const handleModal = (id) => {
     handlePortfolioData(id);
   };
   // End dynamic portfolio with slug
@@ -110,7 +110,6 @@ const Works1 = () => {
               background: `${theme === "dark" ? "transparent" : item?.bg}`,
             }}
             key={item.id}
-            onClick={() => handleModle(item?.id)}
           >
             <div className="overflow-hidden rounded-lg">
               <Image
@@ -128,7 +127,7 @@ const Works1 = () => {
             <h2 className="font-medium text-xl text-center duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
               {item.title}
             </h2>
-            <div className="flex">
+            <div className="flex justify-center">
               <a href={item.repoLink}
                 alt="GitHub Repo"
                 target="_blank"
@@ -142,21 +141,29 @@ const Works1 = () => {
                 className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#176bd9]  hover:to-[#0000FF] p-2 text-xtiny text-white rounded-[35px] m-2"
               >View Demo</a>
             </div>
+            <div className='flex justify-center'>
+              <button
+                className={`flex justify-center bg-transparent duration-200 transition ease-linear hover:bg-gradient-to-l ${theme === 'light' ? 'from-[#DD2476] to-[#fa5252ef] border-black text-black' : 'from-[#DD2476] to-[#fa5252ef] border-white text-white'} border-2 p-3 text-tiny rounded-[35px] my-2 mx-auto}`}
+                onClick={() => handleModal(item?.id)}
+              >
+                Read Project Description
+              </button>
+            </div>
           </div>
         ))}
       </Masonry>
       {/* End portfolio items */}
 
       {/* Start Modal for portfolio items */}
-      {/* <Modal
+      <Modal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
         className=" outline-none flex items-center  p-4 md:p-8  rounded-2xl my-8"
       >
         <div className=" w-full md:w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg ">
-          <div className=" overflow-y-scroll max-h-[60vh] no-scrollbar "> */}
-      {/* close button */}
-      {/* <BsXCircle
+          <div className=" overflow-y-scroll max-h-[60vh] no-scrollbar ">
+            {/* close button */}
+            <BsXCircle
               onClick={() => setIsOpen(false)}
               className="text-7xl cursor-pointer  absolute right-2 -top-10 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
             />
@@ -164,37 +171,12 @@ const Works1 = () => {
               {singleData.tag}
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 my-6">
+            <div className="flex flex-col justify-center items-center my-6">
               <div className="space-y-2">
-                <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
-                  <FiFilePlus className="sm:text-lg hidden sm:block mr-2  md:text-xl" />
-                  Project :&nbsp; <span className="font-medium "> Website</span>
-                </p>
-                <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
+                <p className="dark:text-white flex items-center text-[15px]  sm:text-lg flex-wrap">
                   <FiCode className="text-lg mr-2 hidden sm:block" />
                   Languages :&nbsp;
                   <span className="font-medium">{singleData?.languages}</span>
-                </p>
-              </div>
-
-              <div className="space-y-2">
-                <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px]  sm:text-lg ">
-                  <FiUser className="text-lg mr-2 hidden sm:block" />
-                  Client :&nbsp;
-                  <span className="font-medium ">{singleData?.client}</span>
-                </p>
-                <p className="dark:text-white flex items-center text-[15px] sm:text-lg ">
-                  <FiExternalLink className="text-lg mr-2 hidden sm:block" />
-                  Preview :&nbsp;
-                  <span className="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060] ">
-                    <a
-                      href={singleData?.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {singleData?.linkText}
-                    </a>
-                  </span>
                 </p>
               </div>
             </div>
@@ -213,7 +195,7 @@ const Works1 = () => {
             />
           </div>
         </div>
-      </Modal> */}
+      </Modal>
       {/* End Modal for portfolio items */}
     </>
   );
