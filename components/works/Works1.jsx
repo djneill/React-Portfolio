@@ -135,7 +135,7 @@ const Works1 = () => {
                 className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#50C878]  hover:to-[#228B22] p-2 text-xtiny text-white rounded-[35px] m-2"
               >GitHub Repo</a>
               <a href={item.link}
-                alt="GitHub Repo"
+                alt="Demo Link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#176bd9]  hover:to-[#0000FF] p-2 text-xtiny text-white rounded-[35px] m-2"
