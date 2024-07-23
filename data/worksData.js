@@ -22,7 +22,7 @@ module.exports = [
     imgSmall: "/images/work_images/dh.webp",
     bg: "#F4F4FF",
     client: "Dev Search",
-    languages: "Typescript, Next.js, React, Tailwind CSS",
+    languages: "Typescript, Next.js, React, Tailwind CSS, GitHub API",
     link: "https://dev-search-github.vercel.app/",
     repoLink: "https://github.com/djneill/dev-search",
     linkText: "dev-search-github.vercel.app",
