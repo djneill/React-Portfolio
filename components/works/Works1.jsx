@@ -59,7 +59,7 @@ const Works1 = () => {
   return (
     <>
       {/* Portfolio filter tab start */}
-      <ul className="mt-[40px] flex w-full justify-start md:justify-end flex-wrap font-medium pb-12">
+      {/* <ul className="mt-[40px] flex w-full justify-start md:justify-end flex-wrap font-medium pb-12">
         <li
           className={`${test === "All" ? "text-[#FA5252]" : "filter-btn "
             } mr-4 md:mx-4`}
@@ -80,8 +80,8 @@ const Works1 = () => {
           onClick={() => handleSearch("Web App")}
         >
           Web Apps
-        </li>
-        {/* <li
+        </li> */}
+      {/* <li
           className={`${test === "Logo" ? "text-[#FA5252]" : "filter-btn ml-0"
             } mr-4 md:mx-4`}
           onClick={() => handleSearch("Logo")}
@@ -94,7 +94,7 @@ const Works1 = () => {
         >
           Graphic Design
         </li> */}
-      </ul>
+      {/* </ul> */}
       {/* End portfolio filter tab */}
 
       {/* Start portfolio items */}
