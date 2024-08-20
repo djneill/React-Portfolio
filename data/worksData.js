@@ -2,17 +2,17 @@ module.exports = [
   {
     id: "1",
     tag: "Web App",
-    title: "Let's Cook",
-    img: "/images/work_images/letscook.webp",
-    imgSmall: "/images/work_images/letscook.webp",
+    title: "The Hangman Game",
+    img: "/images/work_images/hg.webp",
+    imgSmall: "/images/work_images/hg.webp",
     bg: "#F4F4FF",
-    client: "Let's Cook",
-    languages: "JavaScript, Node, Express, Tailwind, MongoDB, Mongoose, MVC, Passport.js",
-    link: "https://lets-cook-mvp.onrender.com/",
-    repoLink: "https://github.com/djneill/Lets-Cook-MVP",
-    linkText: "lets-cook-mvp.onrender.com",
+    client: "The Hangman Game",
+    languages: "Typescript, React, Next.js, Tailwind CSS",
+    link: "https://hangman-game-fun.vercel.app/",
+    repoLink: "https://github.com/djneill/hangman-game",
+    linkText: "hangman-game-fun.vercel.app/",
     description:
-      "Let's Cook is a full-stack web app. I wanted to create a place where users could post their favorite recipes, search for new recipes, and save their favorite recipes to a collection that they could easily find. Users can like, save, and comment on recipes, as well as delete recipes from their favorites that they may not want to keep saved.",
+      "This project is an interactive Hangman game built with Next.js, React, TypeScript, and Tailwind CSS. It features a responsive design, multiple word categories, and supports both on-screen and physical keyboard inputs for an engaging user experience.",
   },
   {
     id: "2",
@@ -43,6 +43,21 @@ module.exports = [
     linkText: "dev-search-github.vercel.app",
     description:
       "Dev Search is a web application that allows users to search for GitHub profiles and view detailed information about developers. Users can search for any GitHub username, view their profile information, and toggle between light and dark themes.",
+  },
+  {
+    id: "4",
+    tag: "Web App",
+    title: "Let's Cook",
+    img: "/images/work_images/letscook.webp",
+    imgSmall: "/images/work_images/letscook.webp",
+    bg: "#F4F4FF",
+    client: "Let's Cook",
+    languages: "JavaScript, Node, Express, Tailwind, MongoDB, Mongoose, MVC, Passport.js",
+    link: "https://lets-cook-mvp.onrender.com/",
+    repoLink: "https://github.com/djneill/Lets-Cook-MVP",
+    linkText: "lets-cook-mvp.onrender.com",
+    description:
+      "Let's Cook is a full-stack web app. I wanted to create a place where users could post their favorite recipes, search for new recipes, and save their favorite recipes to a collection that they could easily find. Users can like, save, and comment on recipes, as well as delete recipes from their favorites that they may not want to keep saved.",
   },
   // {
   //   id: "4",
