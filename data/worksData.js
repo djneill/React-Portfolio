@@ -2,6 +2,21 @@ module.exports = [
   {
     id: "1",
     tag: "Web App",
+    title: "Money Guardian",
+    img: "/images/work_images/finance.webp",
+    imgSmall: "/images/work_images/finance.webp",
+    bg: "#F4F4FF",
+    client: "Money Guardian",
+    languages: "Typescript, React, Next.js, Tailwind CSS, Appwrite",
+    link: "https://money-guardian.vercel.app/",
+    repoLink: "https://github.com/djneill/money-guardian",
+    linkText: "money-guardian.vercel.app/",
+    description:
+      "Money Guardian is built with Next.js, React, TypeScript, Tailwind CSS, and Appwrite. It's an excellent resource for young adults learning to take control of their finances, as well as for adults who want to keep track of their income, expenses, and budgets.",
+  },
+  {
+    id: "2",
+    tag: "Web App",
     title: "The Hangman Game",
     img: "/images/work_images/hg.webp",
     imgSmall: "/images/work_images/hg.webp",
@@ -15,7 +30,7 @@ module.exports = [
       "This project is an interactive Hangman game built with Next.js, React, TypeScript, and Tailwind CSS. It features a responsive design, multiple word categories, and supports both on-screen and physical keyboard inputs for an engaging user experience.",
   },
   {
-    id: "2",
+    id: "3",
     tag: "Web App",
     title: "Password Generator",
     img: "/images/work_images/pg.webp",
@@ -30,7 +45,7 @@ module.exports = [
       "This project is a web-based password generator, it allows users to generate secure passwords with customizable options.",
   },
   {
-    id: "3",
+    id: "4",
     tag: "Web App",
     title: "Dev Search",
     img: "/images/work_images/dh.webp",
@@ -45,7 +60,7 @@ module.exports = [
       "Dev Search is a web application that allows users to search for GitHub profiles and view detailed information about developers. Users can search for any GitHub username, view their profile information, and toggle between light and dark themes.",
   },
   {
-    id: "4",
+    id: "5",
     tag: "Web App",
     title: "Let's Cook",
     img: "/images/work_images/letscook.webp",
@@ -60,7 +75,7 @@ module.exports = [
       "Let's Cook is a full-stack web app. I wanted to create a place where users could post their favorite recipes, search for new recipes, and save their favorite recipes to a collection that they could easily find. Users can like, save, and comment on recipes, as well as delete recipes from their favorites that they may not want to keep saved.",
   },
   {
-    id: "",
+    id: "6",
     tag: "Website",
     title: "808 Island Grinds",
     img: "/images/work_images/808ig.webp",
@@ -75,7 +90,7 @@ module.exports = [
       "808 Island Grinds is a website designed to showcase the food and services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   },
   {
-    id: "6",
+    id: "7",
     tag: "Website",
     title: "Parada Restoration",
     img: "/images/work_images/pr.webp",
@@ -89,7 +104,7 @@ module.exports = [
       "Parada Restoration is a website designed to showcase the restoration services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   },
   {
-    id: "7",
+    id: "8",
     tag: "Website",
     title: "Beauty By Bea",
     img: "/images/work_images/bea.webp",
