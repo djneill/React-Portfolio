@@ -5,6 +5,7 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
+import { PiButterflyFill } from "react-icons/pi";
 
 const Social = () => {
   const socialContent = [
@@ -22,6 +23,12 @@ const Social = () => {
     },
     {
       id: 3,
+      link: "https://bsky.app/profile/codingguitarist.bsky.social",
+      icon: <PiButterflyFill />,
+      iconClass: "text-[#87CEEB]",
+    },
+    {
+      id: 4,
       link: "https://www.linkedin.com/in/dj-neill/",
       icon: <FaLinkedinIn />,
       iconClass: "text-[#0072b1]",
