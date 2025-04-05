@@ -1,18 +1,18 @@
-module.exports = [
+const worksData = [
   {
     id: "1",
     tag: "Web App",
-    title: "Money Guardian",
-    img: "/images/work_images/finance.webp",
-    imgSmall: "/images/work_images/finance.webp",
+    title: "Tenant Pro - Apartment Building Management System",
+    img: "/images/work_images/tenant.webp",
+    imgSmall: "/images/work_images/tenant.webp",
     bg: "#F4F4FF",
-    client: "Money Guardian",
-    languages: "Typescript, React, Next.js, Tailwind CSS, Appwrite",
-    link: "https://money-guardian.vercel.app/",
-    repoLink: "https://github.com/djneill/money-guardian",
-    linkText: "money-guardian.vercel.app/",
+    client: "Tenant Pro",
+    languages: "Typescript, React, ASP.NET, PostgreSQL, Supabase",
+    link: "https://apartmentmanager-hpcudda3hjfth3cu.canadacentral-01.azurewebsites.net/",
+    repoLink: "https://github.com/djneill/apartment_portal",
+    linkText: "tenantpro.azurewebsites.net/",
     description:
-      "Money Guardian is built with Next.js, React, TypeScript, Tailwind CSS, and Appwrite. It's an excellent resource for young adults learning to take control of their finances, as well as for adults who want to keep track of their income, expenses, and budgets.",
+      "Tenant Pro is a comprehensive apartment management platform that transforms the tenant experience through smart technology integration. The platform provides a centralized dashboard where tenants can manage their living space with features including smart lock controls, package management, guest access, maintenance requests, and thermostat controls. Built with modern technologies like TypeScript, React, and ASP.NET, Tenant Pro streamlines daily living tasks while enhancing security and convenience. The platform's intuitive interface and real-time notifications ensure tenants stay connected to their home, whether they're managing deliveries, controlling their smart lock, or reporting maintenance issues.",
   },
   {
     id: "2",
@@ -67,7 +67,8 @@ module.exports = [
     imgSmall: "/images/work_images/letscook.webp",
     bg: "#F4F4FF",
     client: "Let's Cook",
-    languages: "JavaScript, Node, Express, Tailwind, MongoDB, Mongoose, MVC, Passport.js",
+    languages:
+      "JavaScript, Node, Express, Tailwind, MongoDB, Mongoose, MVC, Passport.js",
     link: "https://lets-cook-mvp.onrender.com/",
     repoLink: "https://github.com/djneill/Lets-Cook-MVP",
     linkText: "lets-cook-mvp.onrender.com",
@@ -220,7 +221,7 @@ module.exports = [
   //   description:
   //     "John's Gym Temple is a website designed to showcase the martial arts services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   // },
-  // { 
+  // {
   //   id: "9",
   //   tag: "Web App",
   //   title: "Film Flix",
@@ -263,3 +264,4 @@ module.exports = [
   //     "Temple Astronomy Society is a web app that I created using Nasa POD API. This was designed for the Temple Astronomy Society to be able to view the Nasa Picture of the Day, and read the description of the image. Users can view the Nasa Picture of the Day, and read the description of the image.",
   // },
 ];
+export default worksData;

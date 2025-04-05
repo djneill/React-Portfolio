@@ -2,23 +2,31 @@ const Tag = () => {
   const tagData = [
     {
       title: "Languages",
-      tags: ["https://skillicons.dev/icons?i=js,ts,python,html,css&theme=dark"],
+      tags: ["https://skillicons.dev/icons?i=js,ts,cs,html,css&theme=dark"],
     },
     {
       title: "Frameworks",
-      tags: ["https://skillicons.dev/icons?i=react,nodejs,next,vite,astro&theme=dark"],
+      tags: [
+        "https://skillicons.dev/icons?i=react,nodejs,next,vite,astro&theme=dark",
+      ],
     },
     {
       title: "Libraries",
-      tags: ["https://skillicons.dev/icons?i=tailwind,express,bootstrap&theme=dark"],
+      tags: [
+        "https://skillicons.dev/icons?i=tailwind,express,bootstrap&theme=dark",
+      ],
     },
     {
       title: "Databases",
-      tags: ["https://skillicons.dev/icons?i=mongodb,sqlite,postgresql&theme=dark"],
+      tags: [
+        "https://skillicons.dev/icons?i=mongodb,sqlite,postgresql&theme=dark",
+      ],
     },
     {
       title: "Tools",
-      tags: ["https://skillicons.dev/icons?i=vscode,github,git,postman,photoshop,figma,vercel,netlify&theme=dark"],
+      tags: [
+        "https://skillicons.dev/icons?i=vscode,github,git,postman,photoshop,figma,vercel,netlify&theme=dark",
+      ],
     },
   ];
 

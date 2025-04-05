@@ -1,4 +1,4 @@
-module.exports = [
+const serviceData = [
   {
     id: "1",
     icon: "/images/icons/icon-1.svg",
@@ -32,3 +32,4 @@ module.exports = [
     bg: "#F3FAFF",
   },
 ];
+export default serviceData;

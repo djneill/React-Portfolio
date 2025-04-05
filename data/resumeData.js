@@ -1,7 +1,7 @@
 import { MdOutlineBusinessCenter, MdOutlineSchool } from "react-icons/md";
 import { FaAward } from "react-icons/fa";
 
-module.exports = [
+const data = [
   {
     id: 1,
     title: "Education",
@@ -10,11 +10,10 @@ module.exports = [
       {
         id: 1,
         date: "2021-2023",
-        title: "Ph.D in Horriblensess ",
+        title: "Ph.D in Horriblensess",
         place: "ABC University, Los Angeles, CA",
         bg: "#FFF4F4",
       },
-
       {
         id: 2,
         date: "2019 - Present",
@@ -22,11 +21,10 @@ module.exports = [
         place: "Google Inc.",
         bg: "#FFF1FB",
       },
-
       {
         id: 3,
         date: "2021",
-        title: "Best Developer ",
+        title: "Best Developer",
         place: "University Of Melbourne, NA",
         bg: "#FFF4F4",
       },
@@ -44,7 +42,6 @@ module.exports = [
         place: "Imperialize Technical Institute",
         bg: "#EEF5FA",
       },
-
       {
         id: 2,
         date: "2015-2017",
@@ -52,7 +49,6 @@ module.exports = [
         place: "ib-themes ltd.",
         bg: "#F2F4FF",
       },
-
       {
         id: 3,
         date: "2008",
@@ -70,11 +66,10 @@ module.exports = [
       {
         id: 1,
         date: "2015-2017",
-        title: "  Graphic Designer",
+        title: "Graphic Designer",
         place: "Web Graphy, Los Angeles, CA",
         bg: "#FCF4FF",
       },
-
       {
         id: 2,
         date: "2014 - 2015",
@@ -82,7 +77,6 @@ module.exports = [
         place: "Creative Gigs.",
         bg: "#FCF9F2",
       },
-
       {
         id: 3,
         date: "2015-2017",
@@ -93,3 +87,5 @@ module.exports = [
     ],
   },
 ];
+
+export default data;

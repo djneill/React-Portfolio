@@ -1,4 +1,4 @@
-module.exports = [
+const brandSlideData = [
   {
     id: 1,
     img: "/images/slider/mlLogo.webp",
@@ -24,3 +24,4 @@ module.exports = [
     img: "/images/slider/brand-1.webp",
   },
 ];
+export default brandSlideData;

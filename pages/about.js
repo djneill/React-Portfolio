@@ -34,7 +34,6 @@ const index = () => {
             </h3>
             <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 ">
               {/* Experience information  */}
-
               <Service />
             </div>
           </div>
