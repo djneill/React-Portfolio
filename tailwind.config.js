@@ -21,6 +21,7 @@ module.exports = {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
       robotoSlab: ["Roboto Slab", "serif"],
+      merienda: ["Merienda", "cursive"],
     },
     fontSize: {
       xs: ".75rem", // 12px
