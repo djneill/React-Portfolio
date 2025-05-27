@@ -98,10 +98,9 @@ const Works1 = () => {
       {/* End portfolio filter tab */}
 
       {/* Start portfolio items */}
-      <Masonry
+      <div
         breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
       >
         {data.map((item) => (
           <div
@@ -128,22 +127,32 @@ const Works1 = () => {
               {item.title}
             </h2>
             <div className="flex justify-center">
-              <a href={item.repoLink}
+              <a
+                href={item.repoLink}
                 alt="GitHub Repo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#50C878]  hover:to-[#228B22] p-2 text-xtiny text-white rounded-[35px] m-2"
-              >GitHub Repo</a>
-              <a href={item.link}
+              >
+                GitHub Repo
+              </a>
+              <a
+                href={item.link}
                 alt="Demo Link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#176bd9]  hover:to-[#0000FF] p-2 text-xtiny text-white rounded-[35px] m-2"
-              >View Demo</a>
+              >
+                View Demo
+              </a>
             </div>
-            <div className='flex justify-center'>
+            <div className="flex justify-center">
               <button
-                className={`flex justify-center bg-transparent duration-200 transition ease-linear hover:bg-gradient-to-l ${theme === 'light' ? 'from-[#DD2476] to-[#fa5252ef] border-black text-black' : 'from-[#DD2476] to-[#fa5252ef] border-white text-white'} border-2 p-3 text-tiny rounded-[35px] my-2 mx-auto}`}
+                className={`flex justify-center bg-transparent duration-200 transition ease-linear hover:bg-gradient-to-l ${
+                  theme === "light"
+                    ? "from-[#DD2476] to-[#fa5252ef] border-black text-black"
+                    : "from-[#DD2476] to-[#fa5252ef] border-white text-white"
+                } border-2 p-3 text-tiny rounded-[35px] my-2 mx-auto}`}
                 onClick={() => handleModal(item?.id)}
               >
                 Read Project Description
@@ -151,7 +160,7 @@ const Works1 = () => {
             </div>
           </div>
         ))}
-      </Masonry>
+      </div>
       {/* End portfolio items */}
 
       {/* Start Modal for portfolio items */}

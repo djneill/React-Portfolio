@@ -5,6 +5,7 @@ import Service from "../components/service/Service";
 import Brand from "../components/brand/Brand";
 import Footer from "../components/footer/Footer";
 import Seo from "../components/seo/Seo";
+import Image from "next/image";
 
 const index = () => {
   return (
@@ -27,6 +28,73 @@ const index = () => {
           </div>
           {/* End top about info */}
 
+          {/* Start Client Slider */}
+          <div className="bg-[#F8FBFB] dark:bg-zinc-700 max-w-full h-full py-4 rounded-xl">
+            <h3 className="text-center font-merienda dark:text-white text-6xl mb-3 font-semibold ">
+              Clients
+            </h3>
+            <Brand />
+          </div>
+          {/* End Client Slider */}
+
+          {/* Conference Pictures Section */}
+          <div className="py-10">
+            <h3 className="text-4xl font-medium mb-8 dark:text-white">
+              Conference Highlights
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/20241205_103534.webp"
+                  alt="Conference Picture 1"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/20241205_104421.webp"
+                  alt="Conference Picture 2"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/20241205_090012.webp"
+                  alt="Conference Picture 3"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/IMG_1110.webp"
+                  alt="Conference Picture 4"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/20241205_200703.webp"
+                  alt="Conference Picture 5"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/Screenshot_20241205_212143_LinkedIn.webp"
+                  alt="Conference Picture 6"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          {/* End Conference Pictures Section */}
+
           {/* Start about service info */}
           <div className="pb-12 ">
             <h3 className="text-[35px] dark:text-white font-medium pb-5">
@@ -38,15 +106,6 @@ const index = () => {
             </div>
           </div>
           {/* End about service info */}
-
-          {/* Start Client Slider */}
-          <div className="bg-[#F8FBFB] dark:bg-[#0D0D0D] max-w-full h-auto   py-10 rounded-xl">
-            <h3 className="text-center dark:text-white text-6xl mb-3 font-semibold ">
-              Clients
-            </h3>
-            <Brand />
-          </div>
-          {/* End Client Slider */}
 
           {/* Start Common Footer  */}
           <Footer />
