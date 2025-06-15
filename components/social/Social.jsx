@@ -17,13 +17,13 @@ const Social = () => {
     },
     {
       id: 2,
-      link: "https://twitter.com/CodingGuitarist",
+      link: "https://x.com/devsixstrings",
       icon: <FaTwitter />,
       iconClass: "text-[#1C9CEA]",
     },
     {
       id: 3,
-      link: "https://bsky.app/profile/codingguitarist.bsky.social",
+      link: "https://bsky.app/profile/devsixstrings.bsky.social",
       icon: <PiButterflyFill />,
       iconClass: "text-[#87CEEB]",
     },
