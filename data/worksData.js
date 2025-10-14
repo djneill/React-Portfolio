@@ -31,6 +31,21 @@ const worksData = [
   },
   {
     id: "3",
+    tag: "Web App",
+    title: "Pickleballers",
+    img: "/images/work_images/pbs.webp",
+    imgSmall: "/images/work_images/pbs.webp",
+    bg: "#FFF3FC",
+    client: "Pickleballers",
+    languages: "TypeScript, React, ASP.NET, PostgreSQL, Supabase, Azure",
+    link: "https://polite-tree-07cef7510.2.azurestaticapps.net/",
+    repoLink: "https://github.com/djneill/Pickleball-Scoreboard",
+    linkText: "polite-tree-07cef7510.2.azurestaticapps.net",
+    description:
+      "A full-stack app built to showcase enterprise-level engineering practices in a fun, lightweight project. Includes over 60 automated tests (unit, integration, and end-to-end with Playwright) to ensure reliability across the stack. Features Google OAuth, JWT authentication, and multi-tenant architecture with a PostgreSQL backend. Deployed on Azure, following clean architecture principles and CI/CD-ready workflows.",
+  },
+  {
+    id: "4",
     tag: "Website",
     title: "808 Island Grinds",
     img: "/images/work_images/808ig.webp",
@@ -45,7 +60,7 @@ const worksData = [
       "808 Island Grinds is a website designed to showcase the food and services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   },
   {
-    id: "4",
+    id: "5",
     tag: "Website",
     title: "Parada Restoration",
     img: "/images/work_images/pr.webp",
@@ -59,7 +74,7 @@ const worksData = [
       "Parada Restoration is a website designed to showcase the restoration services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   },
   {
-    id: "5",
+    id: "6",
     tag: "Website",
     title: "Beauty By Bea",
     img: "/images/work_images/bea.webp",
@@ -73,7 +88,7 @@ const worksData = [
       "Beauty By Bea is a website designed to showcase the beauty services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
   },
   {
-    id: "6",
+    id: "7",
     tag: "Web App",
     title: "Let's Cook",
     img: "/images/work_images/letscook.webp",
@@ -89,7 +104,7 @@ const worksData = [
       "Let's Cook is a full-stack web app. I wanted to create a place where users could post their favorite recipes, search for new recipes, and save their favorite recipes to a collection that they could easily find. Users can like, save, and comment on recipes, as well as delete recipes from their favorites that they may not want to keep saved.",
   },
   {
-    id: "7",
+    id: "8",
     tag: "Web App",
     title: "The Hangman Game",
     img: "/images/work_images/hg.webp",
@@ -104,7 +119,7 @@ const worksData = [
       "This project is an interactive Hangman game built with Next.js, React, TypeScript, and Tailwind CSS. It features a responsive design, multiple word categories, and supports both on-screen and physical keyboard inputs for an engaging user experience.",
   },
   {
-    id: "8",
+    id: "9",
     tag: "Web App",
     title: "Password Generator",
     img: "/images/work_images/pg.webp",
@@ -119,7 +134,7 @@ const worksData = [
       "This project is a web-based password generator, it allows users to generate secure passwords with customizable options.",
   },
   {
-    id: "9",
+    id: "10",
     tag: "Web App",
     title: "Dev Search",
     img: "/images/work_images/dh.webp",
