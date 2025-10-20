@@ -12,7 +12,7 @@ const LineItem = ({ item }) => {
     {
       id: 2,
       color: "#FFA726",
-      name: "React | Next.JS | Node.JS | Vite | Astro",
+      name: "React | .NET | Next.JS | Node.JS | Vite | Astro",
       // number: "95",
     },
     {
