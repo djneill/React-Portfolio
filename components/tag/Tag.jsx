@@ -7,7 +7,7 @@ const Tag = () => {
     {
       title: "Frameworks",
       tags: [
-        "https://skillicons.dev/icons?i=react,nodejs,next,vite,astro&theme=dark",
+        "https://skillicons.dev/icons?i=react,dotnet,next,nodejs,vite,astro&theme=dark",
       ],
     },
     {
@@ -25,7 +25,7 @@ const Tag = () => {
     {
       title: "Tools",
       tags: [
-        "https://skillicons.dev/icons?i=vscode,github,git,postman,photoshop,figma,vercel,netlify&theme=dark",
+        "https://skillicons.dev/icons?i=vscode,azure,github,git,postman,photoshop,figma,vercel,netlify&theme=dark",
       ],
     },
   ];

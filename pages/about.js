@@ -91,6 +91,30 @@ const index = () => {
                   className="object-cover"
                 />
               </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/20250924_155505.webp"
+                  alt="Conference Picture 7"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/20250924_200316.webp"
+                  alt="Conference Picture 8"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-[300px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/about/20250925_180024.webp"
+                  alt="Conference Picture 9"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
           {/* End Conference Pictures Section */}
