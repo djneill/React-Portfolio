@@ -8,9 +8,9 @@ const worksData = [
     bg: "#F4F4FF",
     client: "Tenant Pro",
     languages: "Typescript, React, ASP.NET, PostgreSQL, Supabase",
-    link: "https://apartmentmanager-hpcudda3hjfth3cu.canadacentral-01.azurewebsites.net/",
+    link: "https://www.youtube.com/watch?v=8l5HIbrdS6M",
     repoLink: "https://github.com/djneill/apartment_portal",
-    linkText: "tenantpro.azurewebsites.net/",
+    linkText: "Tenant Pro Demo",
     description:
       "Tenant Pro is a comprehensive apartment management platform that transforms the tenant experience through smart technology integration. The platform provides a centralized dashboard where tenants can manage their living space with features including smart lock controls, package management, guest access, maintenance requests, and thermostat controls. Built with modern technologies like TypeScript, React, and ASP.NET, Tenant Pro streamlines daily living tasks while enhancing security and convenience. The platform's intuitive interface and real-time notifications ensure tenants stay connected to their home, whether they're managing deliveries, controlling their smart lock, or reporting maintenance issues.",
   },
@@ -28,21 +28,6 @@ const worksData = [
     linkText: "tenantpro.azurewebsites.net/",
     description:
       "PennyWise - Personal Finance Dashboard \nPennyWise is a sleek, all-in-one personal finance management app designed to help users take control of their money with clarity and confidence. The interactive dashboard provides a real-time snapshot of total balance, monthly income and expenses, and savings rate, offering users a clear financial overview at a glance. \nUsers can view recent transactions categorized by type, monitor account balances across checking, savings, and credit accounts, and visualize spending habits through dynamic budget progress bars. The built-in budgeting tool allows users to allocate realistic spending limits across categories and track their usage in real-time, while the reporting feature enables the creation of detailed income and expense reports. \nWhether you're saving for a goal or trying to rein in spending, PennyWise helps you track every dollar and build better financial habits.",
-  },
-  {
-    id: "3",
-    tag: "Web App",
-    title: "Pickleballers",
-    img: "/images/work_images/pbs.webp",
-    imgSmall: "/images/work_images/pbs.webp",
-    bg: "#FFF3FC",
-    client: "Pickleballers",
-    languages: "TypeScript, React, ASP.NET, PostgreSQL, Supabase, Azure",
-    link: "https://polite-tree-07cef7510.2.azurestaticapps.net/",
-    repoLink: "https://github.com/djneill/Pickleball-Scoreboard",
-    linkText: "polite-tree-07cef7510.2.azurestaticapps.net",
-    description:
-      "A full-stack app built to showcase enterprise-level engineering practices in a fun, lightweight project. Includes over 60 automated tests (unit, integration, and end-to-end with Playwright) to ensure reliability across the stack. Features Google OAuth, JWT authentication, and multi-tenant architecture with a PostgreSQL backend. Deployed on Azure, following clean architecture principles and CI/CD-ready workflows.",
   },
   {
     id: "4",
@@ -147,6 +132,21 @@ const worksData = [
     linkText: "dev-search-github.vercel.app",
     description:
       "Dev Search is a web application that allows users to search for GitHub profiles and view detailed information about developers. Users can search for any GitHub username, view their profile information, and toggle between light and dark themes.",
+  },
+  {
+    id: "3",
+    tag: "Web App",
+    title: "PickleTrack",
+    img: "/images/work_images/pbs.png",
+    imgSmall: "/images/work_images/pbs.png",
+    bg: "#FFF3FC",
+    client: "Pickleballers",
+    languages: "TypeScript, React, ASP.NET, PostgreSQL, Supabase, Azure",
+    link: "https://polite-tree-07cef7510.2.azurestaticapps.net/",
+    repoLink: "https://github.com/djneill/Pickleball-Scoreboard",
+    linkText: "polite-tree-07cef7510.2.azurestaticapps.net",
+    description:
+      "A full-stack app built to showcase enterprise-level engineering practices in a fun, lightweight project. Includes over 60 automated tests (unit, integration, and end-to-end with Playwright) to ensure reliability across the stack. Features Google OAuth, JWT authentication, and multi-tenant architecture with a PostgreSQL backend. Deployed on Azure, following clean architecture principles and CI/CD-ready workflows.",
   },
   // {
   //   id: "4",
