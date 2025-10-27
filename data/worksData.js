@@ -39,10 +39,24 @@ const worksData = [
     client: "808 Island Grinds",
     languages: "HTML, CSS, Javascript, Bootstrap",
     link: "https://islandgrinds.netlify.app/",
-    repoLink: "https://github.com/djneill/islandGrinds",
     linkText: "islandgrinds.netlify.app",
     description:
       "808 Island Grinds is a website designed to showcase the food and services provided by our client's business. It includes information about the company, services offered, contact details, and a contact form for potential customers to get in touch.",
+  },
+  {
+    id: "4",
+    tag: "Website",
+    title: "Tacos Los Troncos",
+    img: "/images/work_images/tacoslt.webp",
+    imgSmall: "/images/work_images/tacoslt.webp",
+    bg: "#FFF3FC",
+    client: "Tacos Los Troncos",
+    languages: "React, Typescript, Tailwind CSS, Vite",
+    link: "https://tacos-los-troncos.netlify.app/",
+    repoLink: "https://github.com/djneill/tacos-los-troncos/",
+    linkText: "tacos-los-troncos.netlify.app",
+    description:
+      "A modern, responsive website for Tacos Los Troncos, an authentic Mexican food truck serving delicious tacos, burritos, and more.",
   },
   {
     id: "5",

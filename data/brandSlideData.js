@@ -21,7 +21,7 @@ const brandSlideData = [
   },
   {
     id: 6,
-    img: "/images/slider/brand-1.webp",
+    img: "/images/slider/tacolt.webp",
   },
 ];
 export default brandSlideData;
